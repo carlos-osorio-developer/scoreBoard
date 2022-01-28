@@ -1,4 +1,5 @@
 import { newScore, scoresData } from "./api";
+import '../style/stylesheet.scss';
 
 const submitButton = document.getElementById("submit-button");
 const refreshButton = document.getElementById("refresh-button");
