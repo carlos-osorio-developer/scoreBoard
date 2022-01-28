@@ -1,6 +1,7 @@
 import { newScore, scoresData } from "./api";
 
 const submitButton = document.getElementById("submit-button");
+const refreshButton = document.getElementById("refresh-button");
 
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();    
@@ -14,3 +15,20 @@ submitButton.addEventListener("click", (event) => {
     newScore(userName, userScore);    
   }
 });
+
+const loadData = async() => {    
+  let scores = await scoresData();
+  const scoresList = document.getElementById("scores-list");
+  scoresList.innerHTML = "";
+  scores.result.sort((a, b) => b.score - a.score);
+  scores.result.forEach(score => scoresList.appendChild(createScoreListItem(score)));  
+};
+
+function createScoreListItem(score) {
+  const scoreListItem = document.createElement("tr");
+  scoreListItem.innerHTML = `<td>${score.user}</td><td>${score.score}</td>`;    
+  return scoreListItem;
+}
+
+refreshButton.addEventListener("click", loadData);
+
