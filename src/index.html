@@ -9,7 +9,14 @@
   <body>
       <h1>Welcome to ScoreBoard!</h1>
       <main>
-        <!-- Add 2 sections with recent scores and options to add new scores. -->
+        <!-- Add modal div to show error message -->
+        <div id="error-modal" class="modal hidden">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="error-message">Please fill out all fields</p>
+          </div>
+        </div>
+
         <div>
           <header>
             <h2>Recent Scores</h2>

@@ -4,10 +4,11 @@ const submitButton = document.getElementById("submit-button");
 
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();    
-  let userName = document.getElementById("name").value;
-  let userScore = document.getElementById("score").value;    
+  const userName = document.getElementById("name").value;
+  const userScore = document.getElementById("score").value;    
+  const modal = document.getElementById("error-modal");
   if (userName === '' || userScore === "") {
-    alert("Please fill out all fields");
+    modal.classList.remove("hidden");
   } 
   else {    
     newScore(userName, userScore);    
