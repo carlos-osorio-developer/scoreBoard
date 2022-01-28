@@ -1,4 +1,4 @@
-// import fetch from "node-fetch";
+import 'regenerator-runtime/runtime'
 
 // Connect with API
 const API_URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
@@ -29,4 +29,4 @@ const newScore = async (user, score) => {
   return data;
 };
 
-export {newScore, scoresData};
+export {scoresData, newScore};
