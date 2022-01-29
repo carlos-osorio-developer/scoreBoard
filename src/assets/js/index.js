@@ -3,6 +3,7 @@ import '../style/stylesheet.scss';
 
 const submitButton = document.getElementById("submit-button");
 const refreshButton = document.getElementById("refresh-button");
+const closeModalBtn = document.getElementById("close-modal-btn");
 
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();    
@@ -33,3 +34,7 @@ function createScoreListItem(score) {
 
 refreshButton.addEventListener("click", loadData);
 
+closeModalBtn.addEventListener("click", () => {
+  const modal = document.getElementById("error-modal");
+  modal.classList.add("hidden");
+});
