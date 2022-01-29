@@ -104,7 +104,36 @@ body {
           color: #fff;
           cursor: pointer;
         }
-      }      
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        text-align: center;        
+        color: #fff;
+        font-weight: 300;        
+
+        thead {
+          background-color: rgb(63, 63, 63);
+        }
+
+        tr {
+          border-bottom: 1px solid #fff; 
+          
+          &:nth-child(even) {
+            background-color: #646464;
+          }
+        }
+
+        th {
+          padding: 0.5rem;
+        }
+
+        td {
+          padding: 0.5rem;
+        }
+      }
     }
   }
   
