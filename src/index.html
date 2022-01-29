@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>ScoreBoard</title>
+  </head>
+  <body>
+    <h1>Welcome to ScoreBoard!</h1>      
+    <!-- Add modal div to show error message -->
+    <div id="error-modal" class="hidden">
+      <div class="modal-content">
+        <span id="close-modal-btn">&times;</span>
+        <p id="error-message">Please fill out all fields</p>
+      </div>
+    </div>
+    <main>
+      <div class="scores-section">
+        <header>
+          <h2>Recent Scores</h2>
+          <p>
+            <a id="refresh-button" class="button">Refresh</a>
+          </p>
+        </header>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Score</th>                
+            </tr>
+          </thead>
+          <tbody id="scores-list">              
+          </tbody>
+        </table>          
+      </div>
+      <div class="new-score">
+        <h2>Add your score:</h2>
+        <form>
+          <fieldset>                           
+            <input type="text" class="input" name="name" id="name" placeholder="Your name:">                        
+            <input type="text" class="input" name="score" id="score" placeholder="Your score:">
+            <input id="submit-button" class="button" type="submit" value="Submit">            
+          </fieldset>
+      </div>
+    </main>
+  </body>
+    
+</html>
