@@ -38,3 +38,5 @@ closeModalBtn.addEventListener("click", () => {
   const modal = document.getElementById("error-modal");
   modal.classList.add("hidden");
 });
+
+window.onload(loadData());
