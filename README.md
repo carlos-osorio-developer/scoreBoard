@@ -2,10 +2,6 @@
 
 This is an app that retrieve a list of scores from an external API, sorting them in a list. It also allows you to add new scores and refresh the list.
 
-## Live Demo
-
-[ScoreBoard]()
-
 ## Built With
 
 - HTML
