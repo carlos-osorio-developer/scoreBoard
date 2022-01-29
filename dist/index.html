@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>ScoreBoard</title>
+  <script defer src="main.js"></script></head>
+  <body>
+      <h1>Welcome to ScoreBoard!</h1>
+      <main>
+        <!-- Add 2 sections with recent scores and options to add new scores. -->
+        <div>
+          <header>
+            <h2>Recent Scores</h2>
+            <p>
+              <a href="add.php">Add a new score</a>
+            </p>
+          </header>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>              
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>              
+            </tbody>
+          </table>          
+        </div>
+        <div>
+          <h2>Add your score:</h2>
+          <form action="add.php" method="post">
+            <fieldset>              
+              <div>                
+                <input type="text" name="name" id="name" placeholder="Your name:">
+              </div>
+              <div>                
+                <input type="text" name="score" id="score" placeholder="Your score:">
+              </div>              
+              <div>
+                <input id="submit-button" type="submit" value="Submit">
+              </div>
+            </fieldset>
+        </div>
+      </main>
+  </body>
+    
+</html>

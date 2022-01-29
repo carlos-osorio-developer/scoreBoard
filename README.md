@@ -1,10 +1,10 @@
-# What's Next List App
+# ScoreBoard App
 
-This is an app which allows you to create a list of pending tasks to finish, you can add tasks, mark them as completed, and delete them.
+This is an app that retrieve a list of scores from an external API, sorting them in a list. It also allows you to add new scores and refresh the list.
 
 ## Live Demo
 
-[What's Next List](https://carlos-osorio-developer.github.io/whats-next-list/)
+[ScoreBoard]()
 
 ## Built With
 
@@ -37,10 +37,10 @@ To get a local copy up and running follow these simple example steps.
 
 - Use your github account and your terminal to clone this repository to your computer:
 
-`git@github.com:carlos-osorio-developer/whats-next-list.git`
+`git@github.com:carlos-osorio-developer/scoreBoard.git`
 
 - Go to the cloned directory:
-`cd whats-next-list`
+`cd scoreBoard`
 
 - Run the following command to install dependencies:
 `npm install`
