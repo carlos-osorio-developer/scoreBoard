@@ -8,6 +8,7 @@ This is an app that retrieve a list of scores from an external API, sorting them
 - CSS
 - Javascript
 - Webpack-cli
+- API's
 
 
 ## Getting Started
